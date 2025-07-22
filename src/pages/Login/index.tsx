@@ -31,7 +31,7 @@ const Login = () => {
           Login
         </C.Title>
         <C.Description>
-          Acesse sua conta para continuar
+          Acess to Depa App
         </C.Description>
 
         <C.Form onSubmit={handleSubmit}>
@@ -47,14 +47,14 @@ const Login = () => {
             type='password'
             value={password}
             onChange={e => setPassword(e.target.value)}
-            placeholder='Senha'
+            placeholder='password'
             disabled={loading}
             required
           />
 
           {error &&
             <C.Error>
-              E-mail ou senha inválido.
+              E-mail or Password is invalid
             </C.Error>
           }
 
